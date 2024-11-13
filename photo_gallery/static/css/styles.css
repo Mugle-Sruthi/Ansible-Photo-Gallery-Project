@@ -1,0 +1,116 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff85a2, #ffbc42);
+    color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header styling */
+h1 {
+    font-size: 3em;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Form styling */
+form {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="file"] {
+    font-size: 1.2em;
+    padding: 10px;
+    border: 2px solid #ffbc42;
+    border-radius: 10px;
+    margin-right: 15px;
+    background-color: #fff;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #ff85a2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6f81;
+}
+
+/* Gallery styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Full-screen image view */
+.full-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.full-screen img {
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.full-screen.active {
+    visibility: visible;
+}
+
+/* Footer styling */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff85a2;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.2em;
+}
